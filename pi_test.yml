@@ -3,5 +3,5 @@
   become: true
   tasks:
     - name: ping
-      shell: ping -c 1 -w 2 8.8.8.8
+      shell: sudo apt update
       ignore_errors: true
