@@ -4,4 +4,4 @@
   tasks:
     - name: change hostname
       ansible.builtin.hostname:
-        name: Syd-HQ-Test-Pi
+        name: CLRadio
