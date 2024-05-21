@@ -1,5 +1,8 @@
----
-- hosts: all
-  become: true
-  tasks:
-    action: ping
+    ---
+ - name: "Get ping response"
+   hosts: all
+   become: true
+   tasks:
+   - action: ping
+     register: hello
+   - debug: msg="{hello.stdout}"
