@@ -2,6 +2,6 @@
 - hosts: all
   become: true
   tasks:
-    - name: ping
-      shell: sudo apt update
+    - name: apt update
+      shell: apt update
       ignore_errors: true
