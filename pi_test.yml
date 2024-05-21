@@ -3,5 +3,5 @@
   become: true
   tasks:
     - name: change hostname
-      ansible.builtin.hostname
+      ansible.builtin.hostname:
         name: Syd-HQ-Test-Pi
