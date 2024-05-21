@@ -2,6 +2,6 @@
 - hosts: all
   become: true
   tasks:
-    - name: apt update
-      shell: apt update
-      ignore_errors: true
+    - name: change hostname
+      ansible.builtin.hostname
+        name: Syd-HQ-Test-Pi
