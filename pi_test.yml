@@ -1,3 +1,5 @@
 ---
-- name: Test Ping
-  action: ping
+- hosts: all
+  become: true
+  tasks:
+    action: ping
